@@ -44,7 +44,6 @@ namespace MyHomeWork
             this.button1 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.button12 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -54,12 +53,11 @@ namespace MyHomeWork
             this.button2 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.nwDataSet1 = new LinqLabs.NWDataSet();
-            this.order_DetailsTableAdapter1 = new LinqLabs.NWDataSetTableAdapters.Order_DetailsTableAdapter();
-            this.ordersTableAdapter1 = new LinqLabs.NWDataSetTableAdapters.OrdersTableAdapter();
             this.nwDataSet2 = new LinqLabs.NWDataSet();
-            this.bindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.nwDataSet3 = new LinqLabs.NWDataSet();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
@@ -76,7 +74,7 @@ namespace MyHomeWork
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nwDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nwDataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nwDataSet3)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel2
@@ -180,7 +178,6 @@ namespace MyHomeWork
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(628, 401);
             this.dataGridView1.TabIndex = 71;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // splitContainer1
             // 
@@ -263,7 +260,6 @@ namespace MyHomeWork
             this.button1.TabIndex = 136;
             this.button1.Text = "     某年訂單 / 訂單明細";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button13
             // 
@@ -280,7 +276,6 @@ namespace MyHomeWork
             // 
             // comboBox1
             // 
-            this.comboBox1.DataSource = this.bindingSource1;
             this.comboBox1.Font = new System.Drawing.Font("新細明體", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.comboBox1.FormattingEnabled = true;
@@ -289,10 +284,6 @@ namespace MyHomeWork
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(176, 25);
             this.comboBox1.TabIndex = 142;
-            // 
-            // bindingSource1
-            // 
-            this.bindingSource1.CurrentChanged += new System.EventHandler(this.bindingSource1_CurrentChanged);
             // 
             // button12
             // 
@@ -305,7 +296,6 @@ namespace MyHomeWork
             this.button12.TabIndex = 138;
             this.button12.Text = "上一頁";
             this.button12.UseVisualStyleBackColor = false;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // textBox1
             // 
@@ -376,7 +366,6 @@ namespace MyHomeWork
             this.button2.TabIndex = 72;
             this.button2.Text = "     FileInfo[]   - 2017 Created - oerder ";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button4
             // 
@@ -401,23 +390,24 @@ namespace MyHomeWork
             this.label2.TabIndex = 135;
             this.label2.Text = "Year:";
             // 
+            // bindingSource1
+            // 
+            this.bindingSource1.CurrentChanged += new System.EventHandler(this.bindingSource1_CurrentChanged);
+            // 
             // nwDataSet1
             // 
             this.nwDataSet1.DataSetName = "NWDataSet";
             this.nwDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // order_DetailsTableAdapter1
-            // 
-            this.order_DetailsTableAdapter1.ClearBeforeFill = true;
-            // 
-            // ordersTableAdapter1
-            // 
-            this.ordersTableAdapter1.ClearBeforeFill = true;
-            // 
             // nwDataSet2
             // 
             this.nwDataSet2.DataSetName = "NWDataSet";
             this.nwDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // nwDataSet3
+            // 
+            this.nwDataSet3.DataSetName = "NWDataSet";
+            this.nwDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // Frm作業_1
             // 
@@ -430,7 +420,6 @@ namespace MyHomeWork
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frm作業_1";
             this.Text = "Frm作業_1";
-            this.Load += new System.EventHandler(this.Frm作業_1_Load);
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.splitContainer2.Panel1.ResumeLayout(false);
@@ -448,7 +437,7 @@ namespace MyHomeWork
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nwDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nwDataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nwDataSet3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -482,9 +471,7 @@ namespace MyHomeWork
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.BindingSource bindingSource2;
         private LinqLabs.NWDataSet nwDataSet1;
-        private LinqLabs.NWDataSetTableAdapters.Order_DetailsTableAdapter order_DetailsTableAdapter1;
-        private LinqLabs.NWDataSetTableAdapters.OrdersTableAdapter ordersTableAdapter1;
         private LinqLabs.NWDataSet nwDataSet2;
-        private System.Windows.Forms.BindingSource bindingSource3;
+        private LinqLabs.NWDataSet nwDataSet3;
     }
 }

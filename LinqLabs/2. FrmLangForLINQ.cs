@@ -479,7 +479,15 @@ namespace Starter
             char ch=  s1.Chars(2);
             MessageBox.Show("ch = " + ch);
 
+            //
+            // s1.Chars(2)
 
+            ch = MyStringExtend.Chars(s1, 2);
+
+            MessageBox.Show("ch = " + ch);
+
+            //this.nwDataSet1.Products.WriteExcel("xxx.xlx")
+            //this.nwDataSet1.Products.WriteXml(....);
         }
     }
 }

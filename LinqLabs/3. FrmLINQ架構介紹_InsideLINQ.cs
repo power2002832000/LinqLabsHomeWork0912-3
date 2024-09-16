@@ -100,7 +100,7 @@ namespace Starter
 
             // nums.ToExcel("a.xls")
 
-
+            //this.nwDataSet1.Products.MyWhere
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -126,6 +126,7 @@ namespace Starter
             //=====================================
             this.listBox1.Items.Add("Avg UnitsInStock = " + this.nwDataSet1.Products.Average(p => p.UnitsInStock));
             this.listBox1.Items.Add("Max UnitPrice = " + this.nwDataSet1.Products.Max(p => p.UnitPrice));
+
         }
     }
 
@@ -134,7 +135,7 @@ namespace Starter
 
     public static class MyLinqExtenstion
 {
-    public static IEnumerable<T> MyWhere<T>(this IEnumerable<T> source, Func<T, bool> delegateObj)
+    public static IEnumerable<T>  MyWhere<T>(this IEnumerable<T> source, Func<T, bool> delegateObj)
     {
         foreach (T n in source)
         {
