@@ -39,7 +39,7 @@ namespace MyHomeWork
                 this.lblDetails.Text = "Order details";
                 var OrderID = ((NWDataSet.OrdersRow)this.bindingSource1.Current).OrderID;
 
-                var q = from o in this.nwDataSet2.Order_Details
+                var q = from o in this.nwDataSet1.Order_Details
                         where o.OrderID == OrderID
                         select o;
 

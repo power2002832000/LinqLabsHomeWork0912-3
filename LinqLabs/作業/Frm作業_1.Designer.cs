@@ -60,8 +60,6 @@ namespace MyHomeWork
             this.order_DetailsTableAdapter1 = new LinqLabs.NWDataSetTableAdapters.Order_DetailsTableAdapter();
             this.productsTableAdapter1 = new LinqLabs.NWDataSetTableAdapters.ProductsTableAdapter();
             this.adDataSet1 = new LinqLabs.AdDataSet();
-            this.nwDataSet2 = new LinqLabs.NWDataSet();
-            this.nwDataSet3 = new LinqLabs.NWDataSet();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
@@ -78,8 +76,6 @@ namespace MyHomeWork
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nwDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.adDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nwDataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nwDataSet3)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel2
@@ -426,16 +422,6 @@ namespace MyHomeWork
             this.adDataSet1.DataSetName = "AdDataSet";
             this.adDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // nwDataSet2
-            // 
-            this.nwDataSet2.DataSetName = "NWDataSet";
-            this.nwDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // nwDataSet3
-            // 
-            this.nwDataSet3.DataSetName = "NWDataSet";
-            this.nwDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // Frm作業_1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
@@ -464,8 +450,6 @@ namespace MyHomeWork
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nwDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.adDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nwDataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nwDataSet3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -503,7 +487,5 @@ namespace MyHomeWork
         private LinqLabs.NWDataSetTableAdapters.Order_DetailsTableAdapter order_DetailsTableAdapter1;
         private LinqLabs.NWDataSetTableAdapters.ProductsTableAdapter productsTableAdapter1;
         private LinqLabs.AdDataSet adDataSet1;
-        private LinqLabs.NWDataSet nwDataSet2;
-        private LinqLabs.NWDataSet nwDataSet3;
     }
 }
