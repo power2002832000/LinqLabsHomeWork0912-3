@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LinqLabs;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -33,24 +34,25 @@ namespace MyHomeWork
 
         private void bindingSource1_CurrentChanged(object sender, EventArgs e)
         {
-            //try
-            //{
-            //    this.lblDetails.Text = "Order details";
-            //    var OrderID = ((nwDataSet1.OrdersRow)this.bindingSource1.Current).OrderID;
+            try
+            {
+                this.lblDetails.Text = "Order details";
+                var OrderID = ((NWDataSet.OrdersRow)this.bindingSource1.Current).OrderID;
 
-            //    var q = from o in this.nwDataSet2.Order_Details
-            //            where o.OrderID == OrderID
-            //            select o;
+                var q = from o in this.nwDataSet2.Order_Details
+                        where o.OrderID == OrderID
+                        select o;
 
-            //    this.dataGridView2.DataSource = q.ToList();
+                this.dataGridView2.DataSource = q.ToList();
 
-            //}
-            //catch
-            //{
+            }
+            catch
+            {
 
-            //}
+                
+            }
+
         }
-
         private void button13_Click(object sender, EventArgs e)
         {
             //this.nwDataSet1.Products.Take(10);//Top 10 Skip(10)
