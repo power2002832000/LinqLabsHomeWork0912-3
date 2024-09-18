@@ -175,7 +175,7 @@ namespace MyHomeWork
             this.label10.Location = new System.Drawing.Point(440, 175);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(29, 18);
+            this.label10.Size = new System.Drawing.Size(34, 22);
             this.label10.TabIndex = 136;
             this.label10.Text = "年:";
             // 
@@ -186,7 +186,7 @@ namespace MyHomeWork
             this.comboBox3.Location = new System.Drawing.Point(519, 171);
             this.comboBox3.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(176, 26);
+            this.comboBox3.Size = new System.Drawing.Size(176, 30);
             this.comboBox3.TabIndex = 135;
             // 
             // splitContainer1
@@ -230,7 +230,7 @@ namespace MyHomeWork
             this.label8.Location = new System.Drawing.Point(440, 222);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(29, 18);
+            this.label8.Size = new System.Drawing.Size(34, 22);
             this.label8.TabIndex = 132;
             this.label8.Text = "季:";
             // 
@@ -246,7 +246,7 @@ namespace MyHomeWork
             this.comboBox2.Location = new System.Drawing.Point(519, 222);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(176, 26);
+            this.comboBox2.Size = new System.Drawing.Size(176, 30);
             this.comboBox2.TabIndex = 131;
             // 
             // dateTimePicker2
@@ -254,7 +254,7 @@ namespace MyHomeWork
             this.dateTimePicker2.Location = new System.Drawing.Point(859, 116);
             this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(244, 26);
+            this.dateTimePicker2.Size = new System.Drawing.Size(244, 30);
             this.dateTimePicker2.TabIndex = 130;
             // 
             // button3
@@ -274,7 +274,7 @@ namespace MyHomeWork
             this.label7.Location = new System.Drawing.Point(799, 122);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(17, 18);
+            this.label7.Size = new System.Drawing.Size(21, 22);
             this.label7.TabIndex = 129;
             this.label7.Text = "~";
             // 
@@ -294,14 +294,14 @@ namespace MyHomeWork
             this.dateTimePicker1.Location = new System.Drawing.Point(519, 114);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(244, 26);
+            this.dateTimePicker1.Size = new System.Drawing.Size(244, 30);
             this.dateTimePicker1.TabIndex = 128;
             // 
             // button10
             // 
             this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.button10.ForeColor = System.Drawing.Color.Black;
-            this.button10.Location = new System.Drawing.Point(68, 215);
+            this.button10.Location = new System.Drawing.Point(68, 218);
             this.button10.Margin = new System.Windows.Forms.Padding(5);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(359, 42);
@@ -316,7 +316,7 @@ namespace MyHomeWork
             this.label3.Location = new System.Drawing.Point(435, 122);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 18);
+            this.label3.Size = new System.Drawing.Size(53, 22);
             this.label3.TabIndex = 127;
             this.label3.Text = "區間:";
             // 
@@ -338,13 +338,13 @@ namespace MyHomeWork
             this.label6.Location = new System.Drawing.Point(64, 23);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(357, 18);
+            this.label6.Size = new System.Drawing.Size(431, 22);
             this.label6.TabIndex = 105;
             this.label6.Text = "LINQ to AdventureWorks DataSet - ProductPhoto";
             // 
             // Frm作業_2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1462, 825);
             this.Controls.Add(this.splitContainer1);
